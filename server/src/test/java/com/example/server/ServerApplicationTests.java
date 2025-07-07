@@ -1,10 +1,10 @@
-package com.server.AIResumeBuilder;
+package com.example.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AiResumeBuilderApplicationTests {
+class ServerApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.server.AIResumeBuilder;
+package com.example.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AiResumeBuilderApplication {
+public class ServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AiResumeBuilderApplication.class, args);
+		SpringApplication.run(ServerApplication.class, args);
 	}
 
 }

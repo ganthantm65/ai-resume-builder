@@ -8,11 +8,11 @@
 		<version>3.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.server</groupId>
-	<artifactId>AIResumeBuilder</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>AIResumeBuilder</name>
-	<description>AI Resume Builder</description>
+	<name>server</name>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
