@@ -2,8 +2,10 @@ import { faFile } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import resumeBanner from '../assets/images/resume_banner.png';
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
+    const navigate=useNavigate();
   return (
     <div className='w-screen min-h-screen bg-white flex flex-col items-center justify-start '>
         <div className='w-full h-16 flex items-center pl-10 mt-4'>
@@ -29,7 +31,11 @@ const LandingPage = () => {
                     <span className="font-semibold"> no design skills or login required.</span>
                 </p>
 
-                <button className='w-40 h-12 bg-black text-white font-monts text-sm rounded-lg cursor-pointer hover:bg-gray-900 transition duration-300'>
+                <button onClick={
+                    ()=>{
+                        navigate('/auth/login')
+                    }
+                } className='w-40 h-12 bg-black text-white font-monts text-sm rounded-lg cursor-pointer hover:bg-gray-900 transition duration-300'>
                     Get Started
                 </button>
             </div>

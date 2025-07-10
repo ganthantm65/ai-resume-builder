@@ -30,6 +30,10 @@ public class UserService implements UserDetailsService {
         throw new UsernameNotFoundException("User not found");
     }
 
+    public User getUserDetails(String username){
+       return userRepo.findByUserName(username);
+    }
+
     public User addUser(User user){
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         return userRepo.save(user);
